@@ -116,7 +116,7 @@ def run():
             break
 
     '''save'''
-    torch.save(model.state_dict(), 'model_name.pth')
+    #torch.save(model.state_dict(), 'model_name.pth')
     model_scripted = torch.jit.script(model) # Export to TorchScript
     model_scripted.save('%s.pt'%'kv4') # Save
 
